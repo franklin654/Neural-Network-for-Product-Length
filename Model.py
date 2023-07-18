@@ -38,7 +38,8 @@ df = pandas.read_csv('/content/drive/MyDrive/train.csv')
 df = df.dropna(subset=['DESCRIPTION', 'BULLET_POINTS'])
 target = df.pop("PRODUCT_LENGTH")
 
-"""Removing the extra and unecessary characters in "BULLET POINTS"
+"""
+Removing the extra and unecessary characters in "BULLET POINTS"
 """
 
 t = len(df)
